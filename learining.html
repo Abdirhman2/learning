@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Movies History</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+          .h1 {
+             background-color: #007BFF; 
+           color: white;
+           padding: 5px 5px 5px 10px  ;
+         
+           font-size: 20px;
+            background-color: #333;
+         }
+        nav {
+            background-color: #555;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #444;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+        #start{
+            width: 1000;
+            padding: 30px 0 20px ;
+            margin: -100;
+        }
+       video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    padding: 0 0 0 300px;
+    
+    border: 10px;
+    border-color: red;
+}
+.genre-list {
+  list-style: none;
+  padding: 0;
+}
+
+.genre-list li {
+  display: inline-block;
+  margin: 5px;
+ 
+}
+
+.btn {
+  background: hsla(240, 38%, 27%, 0.351);
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.text-box {
+  padding: 10px;
+  max-width: 400px;
+}
+
+.text-box h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: Arial;
+}
+
+.text-box textarea {
+  width: 95%;
+  height: 80px;
+  padding:5px 10px ;
+  font-size: 15px;
+  font-family: Arial;
+  
+}
+
+.s1 {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+    </style>
+</head>
+
+<body>
+
+    <header >
+        <h1>History of Movies</h1>
+    </header>
+
+    <nav>
+        <a href="#start">Start</a>
+        <a href="#types">Types</a>
+        <a href="#video">Video</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="start">
+            <h2 class="h1">information</h2>
+          
+    <p class="s1">
+        <b>Movies come in many genres</b>, each offering a unique experience for viewers. 
+        <b>Comedy films</b> aim to entertain through humor, often featuring funny characters 
+        and lighthearted plots that make audiences laugh. In contrast, 
+        <b>horror movies</b> are designed to frighten and thrill, using suspense, supernatural 
+        elements, or shocking visuals to create a sense of fear. 
+        <b>Action movies</b> are fast-paced and full of excitement, with intense fight scenes, 
+        daring stunts, and heroic characters who often face overwhelming odds. 
+        <b>Animated films</b> bring stories to life through colorful visuals and imaginative worlds, 
+        appealing to both children and adults. Whether you're in the mood for laughter, adrenaline, suspense, 
+        or wonder, these genres offer something for everyone.
+    </p>
+            
+            <img src="/images/33ffad68e54e96b666543ccd80e63fb2.png.webp" alt="Old Camera">
+        </section>
+
+        <section id="types">
+            <h2 class="h1">Movie Types.</h2>
+            <p>Movies come in many types like: <br> Click on the type you want to learn more!</p>
+           <ul class="genre-list">
+         <li>
+         <a class="btn" href="https://ask4movie.app/genre/action/">Action</a>
+     </li>
+    <li>
+         <a class="btn" href="https://ask4movie.app/genre/comedy/">Comedy</a>
+    </li>
+  <li>
+         <a class="btn" href="https://ask4movie.app/genre/horror/">Horror</a>
+     </li>
+  <li>
+         <a class="btn" href="https://ask4movie.app/genre/animation/">Animation</a>
+     </li>
+     </ul>
+            
+        </section>
+
+        <section id="video">
+            <h2 class="h1">Sample Video</h2>
+            <video controls width="100%">
+                <source src="/vido/فيديو واتساب بتاريخ 2024-11-08 في 11.15.23_b32848ae.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+        </section>
+
+    </div>
+  <template> </template>
+   
+<div class="text-box">
+    <h2 class="h1">What do you think?</h2>
+    <textarea id="feedback" placeholder="Write your opinion here..."></textarea><br>
+    <button onclick="submitFeedback()">Submit</button>
+</div>
+
+  <footer>
+        &copy; 2025  Project
+    </footer>
+
+   <script>
+        function submitFeedback() {
+            let feedback = document.getElementById("feedback").value;
+            if (feedback.trim() === "") {
+                alert("Please enter your feedback before submitting.");
+            } else {
+                alert("Thank you for your feedback: \n" + feedback);
+                console.log("Feedback submitted:", feedback);
+                document.getElementById("feedback").value = ""; // clear textarea
+            }
+        }
+    </script
+
+     
+</body>
+
+</html>
+
